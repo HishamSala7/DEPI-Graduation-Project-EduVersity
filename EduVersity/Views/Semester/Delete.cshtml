@@ -1,0 +1,23 @@
+﻿@* @model SemesterUpdateVm
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete Semester</h1>
+<hr />
+
+<br />
+
+<h3 class="text-danger">Are You Sure you want to delete this Semester (@Model.Name @Model.StartDate To @Model.EndDate) ?!</h3>
+
+
+<br />
+
+<a asp-controller="Semester" asp-action="DeleteSemester" asp-route-Id="@Model.Id" class="btn btn-primary" style="width:10%">Yes</a>
+<a asp-controller="Semester" asp-action="Index" class="btn btn-primary" style="width:10%">No</a>
+
+
+
+
+ *@

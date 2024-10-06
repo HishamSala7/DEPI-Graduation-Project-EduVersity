@@ -1,0 +1,43 @@
+﻿using EduVersity.Managers.UserDepartmentManager;
+using EduVersity.ViewModels.UserDepartment;
+using Microsoft.AspNetCore.Mvc;
+
+namespace EduVersity.Controllers
+{
+    public class UserDepartmentController : Controller
+    {
+        private readonly IUserDepartmentManager _userDepartmentManager;
+
+        public UserDepartmentController(IUserDepartmentManager userDepartmentManager)
+        {
+            _userDepartmentManager = userDepartmentManager;
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> AssignToDepartment(string UserId)
+        {
+            ViewBag.depts = _userDepartmentManager.GetDepartments();
+            ViewBag.UserId = UserId;
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AssignToDepartment(string UserId, UserAddToDepartmentVm model)
+        {
+            if (ModelState.IsValid)
+            {
+                if (!_userDepartmentManager.AddProfessorToDepartment(model))
+                {
+                    ModelState.AddModelError("msg", "The user is already exists in department, if you want to update  go to Details");
+                    ViewBag.depts = _userDepartmentManager.GetDepartments();
+                    ViewBag.UserId = model.UserId;
+                    return View(model);
+                }
+            }
+
+            return Redirect("~/Account/Index");
+        }
+    }
+}

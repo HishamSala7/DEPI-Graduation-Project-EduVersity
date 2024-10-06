@@ -1,0 +1,43 @@
+﻿@model List<DepartmentReadVm>;
+
+
+@{
+    ViewData["Title"] = "Index";
+    int i = 1;
+}
+
+<h1>Departments</h1>
+
+<hr /> <br />
+
+<table class="table table-border table-hover ">
+    <tr>
+        <th>Number</th>
+        <th>Department Name</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+
+    @foreach (var Item in Model)
+    {
+        <tr>
+            <td>@i</td>
+            <td>@Item.Name</td>
+
+            <td>
+                <a href="/Department/Edit/@Item.Id">Edit</a>
+            </td>
+
+            <td>
+                <a href="/Department/Delete/@Item.Id">Remove</a>
+            </td>
+        </tr>
+        i++;
+    }
+
+</table>
+
+<br />
+<a asp-controller="Department" asp-action="AddDepartment" class="btn btn-primary" style="width:20%">Add New Department</a>
+
+
