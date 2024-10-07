@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\views\\userdepartment\\assigntodepartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\views\\userdepartment\\assigntodepartment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\controllers\\userdepartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\controllers\\userdepartmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\viewmodels\\userdepartment\\useraddtodepartmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\viewmodels\\userdepartment\\useraddtodepartmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\views\\account\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\views\\account\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\managers\\userdepartmentmanager\\userdepartmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\managers\\userdepartmentmanager\\userdepartmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity\\eduversity\\viewmodels\\userdepartment\\userdepartmentupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\viewmodels\\userdepartment\\userdepartmentupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +26,58 @@
       "DocumentGroups": [
         {
           "DockedHeight": 291,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserDepartmentUpdateVm.cs",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\ViewModels\\UserDepartment\\UserDepartmentUpdateVm.cs",
+              "RelativeDocumentMoniker": "EduVersity\\ViewModels\\UserDepartment\\UserDepartmentUpdateVm.cs",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\ViewModels\\UserDepartment\\UserDepartmentUpdateVm.cs",
+              "RelativeToolTip": "EduVersity\\ViewModels\\UserDepartment\\UserDepartmentUpdateVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T02:00:12.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "EduVersity\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "EduVersity\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADcAAAAAMzMzMzMrwDYAAAAxAAAA",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Views\\Account\\Details.cshtml",
+              "RelativeDocumentMoniker": "EduVersity\\Views\\Account\\Details.cshtml",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Views\\Account\\Details.cshtml",
+              "RelativeToolTip": "EduVersity\\Views\\Account\\Details.cshtml",
+              "ViewState": "AQIAAHMAAAAANDMzMzMrwH0AAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-06T21:11:48.86Z",
+              "WhenOpened": "2024-10-07T01:41:10.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AssignToDepartment.cshtml",
-              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Views\\UserDepartment\\AssignToDepartment.cshtml",
-              "RelativeDocumentMoniker": "EduVersity\\Views\\UserDepartment\\AssignToDepartment.cshtml",
-              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Views\\UserDepartment\\AssignToDepartment.cshtml",
-              "RelativeToolTip": "EduVersity\\Views\\UserDepartment\\AssignToDepartment.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-06T03:03:51.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "UserDepartmentController.cs",
               "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Controllers\\UserDepartmentController.cs",
               "RelativeDocumentMoniker": "EduVersity\\Controllers\\UserDepartmentController.cs",
               "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Controllers\\UserDepartmentController.cs",
               "RelativeToolTip": "EduVersity\\Controllers\\UserDepartmentController.cs",
-              "ViewState": "AQIAAA8AAABAZmZmZmYSwBAAAAARAAAA",
+              "ViewState": "AQIAADQAAADAmZmZmZkjwEAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T19:17:41.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "UserDepartmentManager.cs",
               "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Managers\\UserDepartmentManager\\UserDepartmentManager.cs",
               "RelativeDocumentMoniker": "EduVersity\\Managers\\UserDepartmentManager\\UserDepartmentManager.cs",
               "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Managers\\UserDepartmentManager\\UserDepartmentManager.cs",
               "RelativeToolTip": "EduVersity\\Managers\\UserDepartmentManager\\UserDepartmentManager.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowDgAAAAAAAAA",
+              "ViewState": "AQIAACYAAABAMzMzMzMhwDcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T18:29:46.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "EduVersity\\Controllers\\ProfileController.cs",
-              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "EduVersity\\Controllers\\ProfileController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T16:46:59.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserAddToDepartmentVm.cs",
-              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\ViewModels\\UserDepartment\\UserAddToDepartmentVm.cs",
-              "RelativeDocumentMoniker": "EduVersity\\ViewModels\\UserDepartment\\UserAddToDepartmentVm.cs",
-              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity\\EduVersity\\ViewModels\\UserDepartment\\UserAddToDepartmentVm.cs",
-              "RelativeToolTip": "EduVersity\\ViewModels\\UserDepartment\\UserAddToDepartmentVm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T16:40:57.135Z",
               "EditorCaption": ""
             }
           ]

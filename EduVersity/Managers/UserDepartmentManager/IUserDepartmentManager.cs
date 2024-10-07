@@ -6,8 +6,11 @@ namespace EduVersity.Managers.UserDepartmentManager
 {
     public interface IUserDepartmentManager
     {
-        bool AddProfessorToDepartment(UserAddToDepartmentVm model);
+        bool AddProfessorToDepartment(UserDepartmentAddVm model);
         List<DepartmentReadVm> GetDepartments();
         string GetProfessorDepartmentName(string UserId);
+        UserDepartmentUpdateVm GetUserDepartmentById(string Id);
+        void Update(UserDepartmentUpdateVm model, string UserId);
+        void Delete(string UserId);
     }
 }

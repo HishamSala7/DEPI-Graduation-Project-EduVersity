@@ -5,6 +5,8 @@ using EduVersity.ViewModels.Level;
 using EduVersity.ViewModels.Semester;
 using EduVersity.ViewModels.Student;
 using EduVersity.ViewModels.User;
+using EduVersity.ViewModels.UserDepartment;
+using NuGet.Packaging.Signing;
 
 
 namespace EduVersity.ViewModels.AutoMapperProfile
@@ -40,6 +42,10 @@ namespace EduVersity.ViewModels.AutoMapperProfile
             CreateMap<Data.Models.Semester, SemesterUpdateVm>();
             CreateMap<SemesterAddVm, Data.Models.Semester>();
             CreateMap<SemesterUpdateVm, Data.Models.Semester>();
+
+            //UserDepartment
+            CreateMap<Data.Models.UserDepartment, UserDepartmentUpdateVm>();
+
 
 
         }

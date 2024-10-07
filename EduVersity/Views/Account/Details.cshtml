@@ -113,8 +113,20 @@
 
     @if(Model.Discriminator == 'P')
     {
-        <a href="/UserDepartment/AssignToDepartment?UserId=@Model.Id">Assign To Department</a>
-        <p style="display:inline-block"> |</p>
+        if (ViewBag.dept == "NA")
+        {
+            <a href="/UserDepartment/AssignToDepartment?UserId=@Model.Id">Assign To Department</a>
+            <p style="display:inline-block"> |</p>
+        }
+        else
+        {
+            <a href="/UserDepartment/UpdateDepartment?UserId=@Model.Id">Update Department</a>
+            <p style="display:inline-block"> |</p>
+
+            <a href="/UserDepartment/DeleteDepartment?UserId=@Model.Id&Username=@Model.Username">Reset Department</a>
+            <p style="display:inline-block"> |</p>
+
+        }
     }
 
     <a asp-action="Index">Back to List</a>
