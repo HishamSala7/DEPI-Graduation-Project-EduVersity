@@ -22,10 +22,7 @@ namespace EduVersity.Data.Models
         public int? LevelId { get; set; }
         public string? ApplicationUserId { get; set; }
         public Department Department { get; set; }
-        public Level Level { get; set; }
         public ICollection<Enrollment> Enrollments { get; set; }
-        public ICollection<StudentSubmissions> StudentSubmissions { get; set; }
-        public ICollection<Attendance> Attendances { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
 
 

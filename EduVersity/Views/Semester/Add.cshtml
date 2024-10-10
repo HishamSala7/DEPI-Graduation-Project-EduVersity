@@ -2,8 +2,8 @@
 
 @{
     ViewData["Title"] = "Add";
-    Dictionary<int, List<int>> Data = new Dictionary<int, List<int>>();
-    List<int> courses = new List<int>();
+    // Dictionary<int, List<int>> Data = new Dictionary<int, List<int>>();
+    // List<int> courses = new List<int>();
 }
 
 <h1>Add Semester</h1>
@@ -21,7 +21,7 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            @* <div class="form-group">
                 <label asp-for="StartDate" class="control-label"></label>
                 <input asp-for="StartDate" class="form-control" type="date" />
                 <span asp-validation-for="StartDate" class="text-danger"></span>
@@ -32,40 +32,20 @@
                 <label asp-for="EndDate" class="control-label"></label>
                 <input asp-for="EndDate" class="form-control" type="date" />
                 <span asp-validation-for="EndDate" class="text-danger"></span>
-            </div>
+            </div> *@
 
-           
 
             @foreach (var deptName in ViewBag.CoursesPerDepartment)
             {
-                <br />
-                    
-                <h3>@deptName.Key</h3>
+                //@foreach(LevelReadVm level in ViewBag.levels)
+                //{
+                    //ViewBag.dept = deptName.Key;
+                    //ViewBag.level = level.Name;
+                    //ViewBag.deptGroup = deptName;
 
-                        <hr />
-
-
-                foreach (LevelReadVm level in ViewBag.levels)
-                {
-                    <h4 >@level.Name:</h4>
-                    <div>
-
-                        @foreach (CourseDepartmentVm item in deptName)
-                        {
-                            <div style="display:inline-block">
-
-								@* <p>@item.CourseName</p> *@
-                                <input type="radio"id="@item.CourseName" name="@item.CourseName"  value="@item.CourseId">
-                                <label >@item.CourseName</label>
-
-                            </div>
-                        }
-                    
-                    </div>
-                }   
+                    //<partial name="_CoursesLevelPartial" view-data="ViewData"></partial>
+                //}
             }
-
-
 
 
             <div class="form-group">

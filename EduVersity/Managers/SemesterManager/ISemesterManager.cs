@@ -1,5 +1,4 @@
-﻿using EduVersity.ViewModels.Level;
-using EduVersity.ViewModels.Semester;
+﻿using EduVersity.ViewModels.Semester;
 
 namespace EduVersity.Managers.SemesterManager
 {
@@ -10,8 +9,8 @@ namespace EduVersity.Managers.SemesterManager
         void Add(SemesterAddVm model);
         void Update(SemesterUpdateVm model);
         void Delete(int id);
-        bool CheckDates(DateOnly EndDate, DateOnly StartDate);
-        IEnumerable<IGrouping<string, CourseDepartmentVm>> GetCoursesPerDepartment();
-        List<LevelReadVm> GetLevels();
+        //bool CheckDates(DateOnly EndDate, DateOnly StartDate);
+        //List<IGrouping<string, CourseSelectionVm>> GetCoursesPerDepartment();
+       // List<LevelReadVm> GetLevels();
     }
 }

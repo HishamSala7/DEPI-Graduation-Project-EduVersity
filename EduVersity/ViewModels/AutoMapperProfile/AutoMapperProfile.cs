@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
 using EduVersity.Data.Models;
 using EduVersity.ViewModels.Course;
-using EduVersity.ViewModels.Level;
+using EduVersity.ViewModels.Post;
 using EduVersity.ViewModels.Semester;
 using EduVersity.ViewModels.Student;
 using EduVersity.ViewModels.User;
 using EduVersity.ViewModels.UserDepartment;
 using NuGet.Packaging.Signing;
+using System.ComponentModel.Design;
 
 
 namespace EduVersity.ViewModels.AutoMapperProfile
@@ -31,11 +32,6 @@ namespace EduVersity.ViewModels.AutoMapperProfile
             CreateMap<CourseEditVm, Data.Models.Course>();
             CreateMap<CourseAddVm, Data.Models.Course>();
 
-            //level
-            CreateMap<Data.Models.Level, LevelReadVm>();
-            CreateMap<LevelAddVm, Data.Models.Level>();
-            CreateMap<LevelUpdateVm, Data.Models.Level>();
-            CreateMap<LevelReadVm, LevelUpdateVm>();
 
             //Semester
             CreateMap<Data.Models.Semester, SemesterReadVm>();
@@ -46,6 +42,11 @@ namespace EduVersity.ViewModels.AutoMapperProfile
             //UserDepartment
             CreateMap<Data.Models.UserDepartment, UserDepartmentUpdateVm>();
 
+
+            //post
+            CreateMap<Data.Models.Post, PostReadVm>();
+            CreateMap<PostAddVm, Data.Models.Post>();
+            CreateMap<PostUpdateVm, Data.Models.Post>();
 
 
         }

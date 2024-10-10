@@ -1,0 +1,44 @@
+﻿@* @model IGrouping<CourseSelectionVm>
+ *@
+
+<br />
+<h3>Department: @ViewBag.deptGroup.Key</h3>
+
+<hr />
+<br />
+
+<form class="form-control" asp-action="testRes" method="post">
+
+    <h5>Level: @ViewBag.level</h5>
+
+    <div class="row">
+        @* @foreach (CourseSelectionVm course in ViewBag.deptGroup)  
+        {
+            <div class="col-sm-3">
+                <div class="card border-dark mb-3" style="max-width: 16rem;">
+
+                    <div class="card-header">@course.CourseName</div>
+
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">@course.CourseCode</h5>
+                        <p class="card-text">Some quick example ..</p> 
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" asp-for="@course.IsChecked" />
+
+                                <p>Add To This Semester</p>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        } *@
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Add Courses To This Level" class="btn btn-primary" style="max-width: 18rem;" />
+    </div>
+
+
+</form>

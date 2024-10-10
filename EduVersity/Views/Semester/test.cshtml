@@ -1,0 +1,36 @@
+﻿@* foreach (levelreadvm level in viewbag.levels)
+                {
+                    <h4 >@level.name:</h4>
+
+                    viewbag.dept = deptname.key;
+                    viewbag.level = level.name;
+
+                    <partial name="_courseslevelpartial" model="deptname" view-data="viewbag"></partial>
+
+                    <div>
+
+                        
+                        
+                        @foreach ( item in deptName)
+                        {
+                            //<div style="display:inline-block">
+
+								 <p>@item.CourseName</p> 
+                                <input type="radio"id="@item.CourseName" name="@item.CourseName"  value="@item.CourseId">
+                                <label >@item.CourseName</label>
+
+                            </div>
+
+
+                            @foreach (var deptName in ViewBag.CoursesPerDepartment)
+            {
+                <br />
+
+                <h3>@deptName.Key</h3>
+
+                        <hr />
+                        }
+                        
+                    </div>
+                }   
+            } *@

@@ -11,12 +11,12 @@ using EduVersity.Repos.StudentRepo;
 using EduVersity.Managers.StudentManager;
 using EduVersity.Repos.CourseRepo;
 using EduVersity.Managers.CourseManager;
-using EduVersity.Repos.LevelRepo;
-using EduVersity.Managers.LevelManager;
 using EduVersity.Repos.SemesterRepo;
 using EduVersity.Managers.SemesterManager;
 using EduVersity.Repos.UserDepartmentRepo;
 using EduVersity.Managers.UserDepartmentManager;
+using EduVersity.Repos.PostRepo;
+using EduVersity.Managers.PostManager;
 
 namespace EduVersity
 {
@@ -41,12 +41,13 @@ namespace EduVersity
             builder.Services.AddScoped<IStudentManager, StudentManager>();
             builder.Services.AddScoped<ICourseRepo, CourseRepo>();
             builder.Services.AddScoped<ICourseManager, CourseManager>();
-            builder.Services.AddScoped<ILevelRepo, LevelRepo>();
-            builder.Services.AddScoped<ILevelManager, LevelManager>();
             builder.Services.AddScoped<ISemesterRepo, SemesterRepo>();
             builder.Services.AddScoped<ISemesterManager, SemesterManager>();
             builder.Services.AddScoped<IUserDepartmentRepo, UserDepartmentRepo>();
             builder.Services.AddScoped<IUserDepartmentManager, UserDepartmentManager>();
+            builder.Services.AddScoped<IPostRepo, PostRepo>();
+            builder.Services.AddScoped<IPostManager, PostManager>();
+            
 
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

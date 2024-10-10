@@ -2,9 +2,7 @@
 using EduVersity.Data.Models;
 using EduVersity.Managers.CourseManager;
 using EduVersity.Managers.DepartmentManager;
-using EduVersity.Managers.LevelManager;
 using EduVersity.Repos.SemesterRepo;
-using EduVersity.ViewModels.Level;
 using EduVersity.ViewModels.Semester;
 
 namespace EduVersity.Managers.SemesterManager
@@ -15,16 +13,14 @@ namespace EduVersity.Managers.SemesterManager
         private readonly IMapper _mapper;
         private readonly ICourseManager _courseManager;
         private readonly IDepartmentManager _departmentManager;
-        private readonly ILevelManager _levelManager;
 
         public SemesterManager(ISemesterRepo semesterRepo, IMapper mapper,
-            ICourseManager courseManager, IDepartmentManager departmentManager, ILevelManager levelManager)
+            ICourseManager courseManager, IDepartmentManager departmentManager)
         {
             _semesterRepo = semesterRepo;
             _mapper = mapper;
             _courseManager = courseManager;
             _departmentManager = departmentManager;
-            _levelManager = levelManager;
         }
 
         public List<SemesterReadVm> GetAllSemesters()
@@ -70,35 +66,36 @@ namespace EduVersity.Managers.SemesterManager
             _semesterRepo.SaveChanges();
         }
 
-        public bool CheckDates(DateOnly EndDate, DateOnly StartDate)
-        {
-            return EndDate > StartDate;
-        }
+        //public bool CheckDates(DateOnly EndDate, DateOnly StartDate)
+        //{
+        //    return EndDate > StartDate;
+        //}
 
-        public IEnumerable<IGrouping<string,CourseDepartmentVm>> GetCoursesPerDepartment()
-        {
-            var depts = _departmentManager.GetAllDepartments();
-            var courses = _courseManager.GetAllCourse();
+        //public List<IGrouping<string,CourseSelectionVm>> GetCoursesPerDepartment()
+        //{
+        //    var depts = _departmentManager.GetAllDepartments();
+        //    var courses = _courseManager.GetAllCourse();
 
-            var res = (from dept in depts
-                       join course in courses
-                       on dept.Id equals course.DepartmentId
-                       select new CourseDepartmentVm
-                       {
-                           CourseId = course.Id,
-                           CourseName = course.Name,
-                           DepartmentName = dept.Name
-                       })
-                      .GroupBy(x => x.DepartmentName);
+        //    var res = (from dept in depts
+        //               join course in courses
+        //               on dept.Id equals course.DepartmentId
+        //               select new CourseSelectionVm
+        //               {
+        //                   CourseId = course.Id,
+        //                   CourseName = course.Name,
+        //                   DepartmentName = dept.Name,
+        //                   CourseCode = course.Code
+        //               })
+        //              .GroupBy(x => x.DepartmentName).ToList();
 
-            return res;  
-        }
+        //    return res;  
+        //}
 
-        public List<LevelReadVm> GetLevels()
-        {
-            var levels = _levelManager.GetAllLevels();
-            return levels;
-        }
+        //public List<LevelReadVm> GetLevels()
+        //{
+        //    var levels = _levelManager.GetAllLevels();
+        //    return levels;
+        //}
 
 
     }

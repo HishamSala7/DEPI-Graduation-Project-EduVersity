@@ -12,9 +12,6 @@ namespace EduVersity.Data.Models
         public Department Department { get; set; }
         public ICollection<Enrollment> Enrollments { get; set; }
         public ICollection<Material> Materials { get; set; }
-        public ICollection<Assignment> Assignments { get; set; }
-        public ICollection<Attendance> Attendances { get; set; }
-        public ICollection<CourseLevelSemester> Semesters { get; set; }
 
     }
 }

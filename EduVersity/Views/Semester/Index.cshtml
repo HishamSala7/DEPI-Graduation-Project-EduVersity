@@ -14,8 +14,8 @@
     <tr>
         <th>Number</th>
         <th>Semester Name</th>
-        <th>Start Date</th>
-        <th>End Date</th>
+        @* <th>Start Date</th>
+        <th>End Date</th> *@
         <th>Edit</th>
         @* <th>Remove</th> *@
     </tr>
@@ -25,9 +25,9 @@
         <tr>
             <td>@i</td>
             <td>@Item.Name</td>
-            <td>@Item.StartDate</td>
+            @* <td>@Item.StartDate</td>
             <td>@Item.EndDate</td>
-
+ *@
 
             <td>
                 <a href="/Semester/Edit/@Item.Id">Edit</a>

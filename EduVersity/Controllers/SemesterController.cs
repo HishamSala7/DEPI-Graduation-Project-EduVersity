@@ -1,6 +1,7 @@
 ﻿using EduVersity.Managers.SemesterManager;
 using EduVersity.ViewModels.Semester;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks.Sources;
 
 namespace EduVersity.Controllers
 {
@@ -21,8 +22,8 @@ namespace EduVersity.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            ViewBag.CoursesPerDepartment = _semesterManager.GetCoursesPerDepartment();
-            ViewBag.levels = _semesterManager.GetLevels();
+            //ViewBag.CoursesPerDepartment = _semesterManager.GetCoursesPerDepartment();
+            //ViewBag.levels = _semesterManager.GetLevels();
             return View();
         }
 
@@ -58,6 +59,25 @@ namespace EduVersity.Controllers
             ModelState.AddModelError("msg", "Invalid Dates");
             return View(model);
         }
+
+        //public IActionResult test()
+        //{
+        //    ViewBag.dept = "IT";
+        //    ViewBag.level = "Grade 1";
+        //    List<CourseSelectionVm> courses = new List<CourseSelectionVm>
+        //    {
+        //        new CourseSelectionVm { CourseCode = "1", CourseName = "crs1", IsChecked = false },
+        //        new CourseSelectionVm { CourseCode = "2", CourseName = "crs1", IsChecked = false },
+        //        new CourseSelectionVm { CourseCode = "3", CourseName = "crs1", IsChecked = false }
+        //    };
+        //    return View(courses);
+        //}
+
+        //public IActionResult testRes(List<CourseSelectionVm> IsChecked)
+        //{
+
+        //    return Content("Ok");
+        //}
 
         //[HttpGet]
         //public IActionResult Delete(int Id)

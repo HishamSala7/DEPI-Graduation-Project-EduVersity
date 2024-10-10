@@ -57,19 +57,13 @@ namespace EduVersity.Models.AppContext
             base.OnConfiguring(optionsBuilder);
         }
 
-        public DbSet<Assignment> Assignments { get; set; }
-        public DbSet<Attendance> Attendances { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<CourseLevelSemester> CourseLevelSemesters { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
-        public DbSet<Lecture> Lectures { get; set; }
-        public DbSet<Level> Levels { get; set; }
         public DbSet<Material> Materials { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Semester> Semesters { get; set; }
         public DbSet<Student> Students { get; set; }
-        public DbSet<StudentSubmissions> StudentSubmissions { get; set; }
         public DbSet<UserDepartment> UserDepartments { get; set; }
 
     }
