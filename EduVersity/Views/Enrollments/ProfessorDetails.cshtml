@@ -1,0 +1,26 @@
+﻿
+@model List<ProfessorCourseReadVm>
+
+@{
+    ViewData["Title"] = "Professor Details";
+}
+
+<h1>Courses</h1>
+<hr />
+
+<table class="table table-bordered table-hover">
+
+    @foreach(var item in Model)
+    {
+        <tr>
+            <th>@item.CourseName</th>
+            <td>
+                <a class="btn btn-primary" href="">Add Materials</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+<a class="btn btn-primary" href="/Enrollments/Index">Back</a>
+

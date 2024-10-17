@@ -1,0 +1,53 @@
+﻿
+@model List<EduVersity.ViewModels.Material.MaterialReadVM>
+<a href="/Material/AddMaterial" class="btn btn-primary">Add Material</a>
+
+ 
+  <table class="table table-bordered table-hover">
+    
+        <tr>
+            <th>Title</th>
+            <th>Upload Date</th>
+            <th>File Link</th>
+            <th>action</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+
+    @foreach (var material in Model)
+        {
+            <tr>
+                <td>@material.Title</td>
+                <td>@material.UploadDate</td>
+                <td>@material.FileLink</td>
+                <td>
+                    <a asp-action="DownloadFile" asp-route-id="@material.Id">Download</a>
+                </td>
+
+                 <td>
+                <a href="/Material/EditMaterial/@material.Id" class="btn btn-primary"> Edit </a>
+                 </td> 
+                 
+                 <td>
+                <a href="/Material/Delete/@material.Id" class="btn btn-primary"> delete </a>
+                 </td>
+
+           @*  <td>
+                <a href="/Material/Edit/@Item.CourseId">Edit</a>
+            </td>
+
+            <td>
+                <a href="/Material/AddMaterial/@Item.CourseId">Add Material</a>
+            </td>
+
+            <td>
+                <a href="/Course/Delete/@Item.CourseId">Remove</a>
+            </td> *@
+
+
+            </tr>
+        }
+</table>
+@*                  <td><a href="@material.FileContent">Download</a></td>
+ *@@*               <a asp-action="DownloadFile" asp-route-id="@material.Id">Download</a>
+ *@

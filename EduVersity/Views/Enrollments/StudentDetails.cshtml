@@ -1,0 +1,50 @@
+﻿
+
+@model List<EnrollmentDetailsVm>
+
+@{
+    ViewData["Title"] = "Enrollment Details";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4 text-center display-4">@ViewData["Title"]</h1>
+    <hr />
+
+    <!-- Loop through each enrollment -->
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <!-- Course Name with Enhanced Text Styling -->
+                <h5 class="card-title text-primary font-weight-bold">
+                    Course: @Html.DisplayFor(model => model[i].CourseName)
+                </h5>
+
+                <!-- Course Info Details -->
+                <dl class="row mt-3">
+                    <!-- Professor Name (if available) -->
+                    @if (!string.IsNullOrEmpty(Model[i].ProfessorName))
+                    {
+                        <dt class="col-sm-3 font-weight-bold text-muted">Professor:</dt>
+                        <dd class="col-sm-9 text-dark font-italic">
+                            @Html.DisplayFor(model => model[i].ProfessorName)
+                        </dd>
+                    }
+
+                    <!-- Grade -->
+                    <dt class="col-sm-3 font-weight-bold text-muted">Grade:</dt>
+                    <dd class="col-sm-9 text-success font-weight-bold">
+                        @Html.DisplayFor(model => model[i].Grade)
+                    </dd>
+
+                </dl>
+            </div>
+        </div>
+    }
+
+    <!-- Back to List Button -->
+    <div class="text-center mt-4">
+        <a asp-action="Index" class="btn btn-secondary btn-lg">Back</a>
+    </div>
+</div>
+

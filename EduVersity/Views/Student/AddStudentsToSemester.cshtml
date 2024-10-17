@@ -1,0 +1,72 @@
+﻿
+
+@model StudentSemesterAddVm
+
+@{
+    SelectList semesterList = new SelectList(Model.semesters, "SemesterId", "SemesterName");
+    int i = 1;
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Select Students for this Semester</h2>
+
+    <form class="form-control p-4 shadow-sm" asp-action="AddStudentsToSemester">
+
+        <!-- Semester Selection -->
+        <div class="mb-3">
+            <label for="SelectedSemester" class="form-label">Select Semester:</label>
+            <select class="form-control"  asp-for="SelectedSemester.Id" asp-items="semesterList">
+            </select>
+        </div>
+
+        <!-- Students Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                     @for (int j = 0; j < Model.Students.Count; j++)
+                    {
+                        <tr>
+                            <th scope="row">@i</th>
+                            <td>@Model.Students[j].FirstName</td>
+                            <td>@Model.Students[j].LastName</td>
+                            <td>@Model.Students[j].LevelName</td>
+                            <td>
+                                <div class="form-check">
+                                    @* @(Model.SelectedStudents[j].IsSelected ? "checked" : "") *@
+                                    <input class="form-check-input" type="checkbox" id="studentCheck_@j" name="SelectedStudents[@j].IsSelected" value="true" >
+                                    <input type="hidden" name="SelectedStudents[@j].Id" value="@Model.Students[j].Id" />
+                                    <label class="form-check-label" for="studentCheck_@j">Select</label>
+
+                                </div>
+                            </td>
+                        </tr>
+                        i++;
+                    } 
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-end mt-3">
+            <button type="submit" class="btn btn-primary">Add Selected Students</button>
+        </div>
+
+    </form>
+</div>
+
+@* value="@Model.Students[j].Id "*@
+
+
+

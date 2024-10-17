@@ -1,0 +1,74 @@
+﻿
+ @model List<EduVersity.ViewModels.Post.PostReadVm>
+
+<!-- Create Post Button at the Top -->
+@if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+{
+    <div class="d-flex justify-content-end mb-4">
+        <a href="/Post/Create" class="btn btn-success">Create New</a>
+    </div>
+}
+<h2 class="text-center">Announcements</h2>
+
+<!-- Post container with fixed height, scrollable content -->
+<div id="postContainer" class="container-sm border shadow-sm p-4" style="max-height: 400px; overflow-y: auto; width: 50%; margin: 0 auto;">
+    @if (Model != null && Model.Any())
+    {
+        <div class="row">
+            @foreach (var post in Model)
+            {
+                <div class="col-12 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <!-- Post Title -->
+                            <h5 class="card-title text-primary">@post.Title</h5>
+
+                            <!-- Post Content -->
+                            <p class="card-text text-justify">@post.Content</p>
+
+                            <!-- Post Date -->
+                            <p class="card-text">
+                                <small class="text-muted">Posted on @post.Date.ToString("MMMM dd, yyyy")</small>
+                            </p>
+
+                            <!-- Edit and Remove Buttons -->
+                            @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+                            {
+                                <div class="d-flex justify-content-between mt-3">
+                                    <div class="btn-group" role="group">
+                                        <a href="/Post/Update/@post.Id" class="btn btn-outline-primary">Edit</a>
+                                        <a href="/Post/Delete/@post.Id" class="btn btn-outline-danger">Remove</a>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <h2 class="text-center">No Announcements.</h2>
+    }
+</div>
+
+<!-- jQuery for handling infinite scroll -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript">
+    var page = 1;
+    var isLoading = false;
+    var hasMorePosts = true;
+
+    // Infinite scroll function for the post container
+    $('#postContainer').scroll(function () {
+        if ($('#postContainer').scrollTop() + $('#postContainer').innerHeight() >= $('#postContainer')[0].scrollHeight - 100) {
+            if (!isLoading && hasMorePosts) {
+                isLoading = true;
+                page++;
+                loadMorePosts(page);
+            }
+        }
+    });
+</script>

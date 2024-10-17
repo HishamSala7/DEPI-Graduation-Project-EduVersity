@@ -1,0 +1,14 @@
+﻿@model StudentDeleteVm
+
+<h1>Delete Student</h1>
+<hr />
+
+<br />
+
+<h3 class="text-danger">Are You Sure you want to delete this Student (@Model.Username) ?!</h3>
+
+
+<br />
+
+<a asp-controller="Student" asp-action="DeleteStudent" asp-route-Id="@Model.Id" asp-route-Username = "@Model.Username" class="btn btn-primary" style="width:10%">Yes</a>
+<a asp-controller="Student" asp-action="Index" class="btn btn-primary" style="width:10%">No</a>

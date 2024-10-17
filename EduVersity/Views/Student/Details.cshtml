@@ -1,0 +1,133 @@
+﻿@model StudentDetailsVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MidName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MidName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        @if (Model.Email == null || Model.Email == string.Empty)
+        {
+            <dd class="col-sm-10">
+                ---
+            </dd>
+        }
+        else
+        {
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+        }
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SSN)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SSN)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.GPA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.GPA)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EnrollDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EnrollDate)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LevelName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LevelName)
+        </dd>
+
+        <dt class="col-sm-2">
+            Department
+        </dt>
+
+        <dd class="col-sm-10">
+            @ViewBag.dept
+        </dd>
+        
+    </dl>
+</div>
+<div>
+    <a href="/Student/Edit/@Model.Id">Edit</a> |
+    <a href="/Student/Delete/@Model.Id">Remove</a> |
+
+    @if(ViewBag.dept == "NA")
+    {
+        <a href="/Student/AssignToDepartment/@Model.Id">Assign To Department</a>
+        <p style="display:inline-block"> |</p>
+    }
+    else
+    {
+        <a href="/Student/UpdateDepartment/@Model.Id">Update Department</a>
+        <p style="display:inline-block"> |</p>
+
+        @* &Username = @Model.Username *@
+        <a href="/Student/DeleteDepartment/@Model.Id">Reset Department</a>
+        <p style="display:inline-block"> |</p>
+
+    }
+
+    <a asp-action="Index">Back to List</a>
+</div>

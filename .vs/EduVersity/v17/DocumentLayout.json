@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\views\\enrollments\\professordetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\views\\enrollments\\professordetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\managers\\enrollmentmanager\\enrollmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\managers\\enrollmentmanager\\enrollmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\managers\\enrollmentmanager\\ienrollmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\managers\\enrollmentmanager\\ienrollmentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfessorDetails.cshtml",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Enrollments\\ProfessorDetails.cshtml",
+              "RelativeDocumentMoniker": "EduVersity\\Views\\Enrollments\\ProfessorDetails.cshtml",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Enrollments\\ProfessorDetails.cshtml",
+              "RelativeToolTip": "EduVersity\\Views\\Enrollments\\ProfessorDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T03:34:54.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEnrollmentManager.cs",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Managers\\EnrollmentManager\\IEnrollmentManager.cs",
+              "RelativeDocumentMoniker": "EduVersity\\Managers\\EnrollmentManager\\IEnrollmentManager.cs",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Managers\\EnrollmentManager\\IEnrollmentManager.cs",
+              "RelativeToolTip": "EduVersity\\Managers\\EnrollmentManager\\IEnrollmentManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T03:31:29.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnrollmentsController.cs",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Controllers\\EnrollmentsController.cs",
+              "RelativeDocumentMoniker": "EduVersity\\Controllers\\EnrollmentsController.cs",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Controllers\\EnrollmentsController.cs",
+              "RelativeToolTip": "EduVersity\\Controllers\\EnrollmentsController.cs",
+              "ViewState": "AQIAACwAAAAQZ2ZmZmYqwD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:31:19.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnrollmentManager.cs",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Managers\\EnrollmentManager\\EnrollmentManager.cs",
+              "RelativeDocumentMoniker": "EduVersity\\Managers\\EnrollmentManager\\EnrollmentManager.cs",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Managers\\EnrollmentManager\\EnrollmentManager.cs",
+              "RelativeToolTip": "EduVersity\\Managers\\EnrollmentManager\\EnrollmentManager.cs",
+              "ViewState": "AQIAAHkAAABAZmZmZmYowIMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:32:55.806Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

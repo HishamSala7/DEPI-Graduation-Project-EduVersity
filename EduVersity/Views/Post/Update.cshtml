@@ -1,0 +1,25 @@
+﻿@model PostUpdateVm
+
+
+<h2 class="text-center mb-4">Edit Post</h2>
+
+<div class="d-flex justify-content-center">
+    <form asp-action="Update" asp-route-Id="@ViewBag.Id" method="post" class="shadow-sm p-4 bg-light rounded" style="width: 50%;">
+        <div class="form-group mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control form-control-sm" style="width: 100%;" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Content" class="form-label"></label>
+            <textarea asp-for="Content" class="form-control form-control-sm" rows="4" style="width: 100%;"></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+        <input value="Edit" type="submit" class="btn btn-primary" />
+        <a class="btn btn-primary" href="/Post/Index">Back</a>
+    </form>
+</div>
+
+
+
