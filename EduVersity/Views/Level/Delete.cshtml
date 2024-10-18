@@ -1,0 +1,22 @@
+﻿@model LevelReadVm
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete Level</h1>
+<hr />
+
+<br />
+
+<h3 class="text-danger">Are You Sure you want to delete this Level (@Model.Name) ?!</h3>
+
+
+<br />
+
+<a asp-controller="Level" asp-action="DeleteLevel" asp-route-Id="@Model.Id" class="btn btn-primary" style="width:10%">Yes</a>
+<a asp-controller="Level" asp-action="Index" class="btn btn-primary" style="width:10%">No</a>
+
+
+
+

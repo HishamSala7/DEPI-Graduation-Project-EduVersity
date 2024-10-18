@@ -1,0 +1,51 @@
+﻿@using static System.Runtime.InteropServices.JavaScript.JSType
+@model EduVersity.ViewModels.Material.MaterialAddVM
+
+@{
+    ViewData["Title"] = "AddMaterial";
+
+}
+
+<h1>Add Material</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+       
+        <form asp-action="AddMaterial" asp-route-CourseId="@ViewBag.CourseId" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <!-- Title -->
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FileLink" class="control-label">Upload File (PDF)</label>
+                <input asp-for="FileLink" class="form-control" type="file" accept=".pdf" />
+                <span asp-validation-for="FileLink" class="text-danger"></span>
+            </div>
+            <!-- CourseId (Dropdown) -->
+            <div class="form-group">
+                <label asp-for="CourseId" class="control-label"></label>
+                <input asp-for="CourseId" class="form-control"></input>
+                <span asp-validation-for="CourseId" class="text-danger"></span>
+            </div> 
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-info" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-controller="Course">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,106 @@
+﻿
+ @model EduVersity.ViewModels.Semester.SemesterDetailsVm
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-4">
+    <!-- Header Section -->
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="display-4">Semester Details</h1>
+        </div>
+    </div>
+
+    <!-- Semester Information Section -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-title">Semester Information</h3>
+            <p class="card-text">
+                <strong>Semester:</strong> @Model.Name
+            </p>
+            <p class="card-text">
+                <strong>Start Date:</strong> @Model.StartDate.ToString("MMMM dd, yyyy")
+            </p>
+            <p class="card-text">
+                <strong>End Date:</strong> @Model.EndDate.ToString("MMMM dd, yyyy")
+            </p>
+        </div>
+    </div>
+
+    <!-- Levels and Courses Section -->
+    @foreach (var level in Model.LevelsName)
+    {
+        <div class="mb-4">
+            <h3 class="text-primary">@level</h3>
+            <hr />
+
+            @foreach (var itemGroup in Model.Courses)
+            {
+                <!-- Display Department or Group Key -->
+                <h4 class="text-secondary">@itemGroup.Key</h4>
+
+                <div class="row">
+                    @foreach (var item in itemGroup)
+                    {
+                        @if (item.LevelName == level)
+                        {
+                            var courseId = Guid.NewGuid();
+                              <!-- Generate a unique ID for each course -->
+                            <!-- Display Each Course in a Card -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@item.CourseName</h5>
+
+                                        <!-- Styled Link to Toggle Course Details -->
+                                        <a href="javascript:void(0);" class="text-info d-inline-block mb-2"
+                                           style="text-decoration: underline; cursor: pointer;"
+                                           data-bs-toggle="collapse" data-bs-target="#detailsSection_@courseId"
+                                           aria-expanded="false" aria-controls="detailsSection_@courseId">
+                                            View Details
+                                        </a>
+
+                                        <!-- Course Details Section (Initially Collapsed) -->
+                                        <div class="collapse" id="detailsSection_@courseId">
+                                            <div class="card card-body bg-light">
+                                                <h5 class="text-secondary mb-3">Course Details</h5>
+
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <span class="fw-bold">Course Name:</span>
+                                                        <span class="text-muted">@item.CourseName</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold">Level:</span>
+                                                        <span class="text-muted">@level</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold">Department:</span>
+                                                        <span class="text-muted">@itemGroup.Key</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold">Credit Hours:</span>
+                                                        <span class="text-muted">@item.CreditHours</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="fw-bold">Course Code:</span>
+                                                        <span class="text-muted">@item.Code</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<a class="btn btn-primary" href="/Semester/Index">Back</a>

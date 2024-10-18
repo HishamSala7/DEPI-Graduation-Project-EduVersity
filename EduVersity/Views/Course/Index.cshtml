@@ -1,0 +1,52 @@
+﻿
+@model List<CourseReadVm>
+
+@{
+    ViewData["Title"] = "Index";
+    int i = 1;
+}
+
+<h1>Courses</h1>
+
+<hr />
+<br />
+
+<table class="table table-border table-hover ">
+    <tr>
+        <th>Number</th>
+        <th>Course Name</th>
+        <th>Code</th>
+        <th>Credit Hours</th>
+        <th>Department</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+
+    @foreach (var Item in Model)
+    {
+        <tr>
+            <td>@i</td>
+            <td>@Item.CourseName</td>
+            <td>@Item.Code</td>
+            <td>@Item.CreditHours</td>
+            <td>@Item.DepartmentName</td>
+
+
+            <td>
+                <a href="/Course/Edit/@Item.CourseId">Edit</a>
+            </td>
+
+            <td>
+                <a href="/Course/Delete/@Item.CourseId">Remove</a>
+            </td>
+        </tr>
+        i++;
+    }
+
+</table>
+
+<br />
+<a asp-controller="Course" asp-action="AddCourse" class="btn btn-primary" style="width:15%">Add New Course</a>
+<a class="btn btn-primary" href="/Enrollments/AssignTeachersToCourses">Assign Teachers</a>
+<a class="btn btn-primary" href="/Enrollments/GetTeachersEnrolledCourses">Assigned Teachers</a>
+

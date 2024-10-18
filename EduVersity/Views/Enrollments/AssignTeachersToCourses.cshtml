@@ -1,0 +1,65 @@
+﻿
+@model List<EnrollCourseDepartmentVm>
+
+@{
+    ViewData["Title"] = "Assign Teachers";
+    int j = 1;
+}
+
+<div class="container mt-5">
+    <!-- Title -->
+    <div class="text-center mb-4">
+        <h1 class="display-6 text-primary">Assign Teachers to Courses</h1>
+    </div>
+
+    <!-- Form Start -->
+    <form class="shadow-sm p-4 bg-light rounded" method="post" asp-action="AssignTeachersToCourses">
+        <!-- Table Container -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Department Name</th>
+                        <th scope="col">Assign Professor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <th scope="row">@j</th>
+                            <td>@Model[i].CourseName</td>
+                            <td>@Model[i].DepartmentName</td>
+                            <td>
+                                <input type="hidden" name="Model[@i].CourseId" value="@Model[i].CourseId" />
+
+                                <select class="form-select" name="Model[@i].ProfessorId">
+                                    <option value="">-- Select Professor --</option>
+                                    @foreach (var professor in ViewBag.professors)
+                                    {
+                                        if(Model[i].DepartmentName == professor.DepartmentName)
+                                        {
+                                            <option value="@professor.UserId"   >
+                                                @professor.FullName
+                                            </option>
+                                        }
+                                    }
+                                </select>
+
+
+                            </td>
+                        </tr>
+                        j++;
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-end mt-4">
+            <button type="submit" class="btn btn-lg btn-primary px-5">Save</button>
+        </div>
+    </form>
+</div>

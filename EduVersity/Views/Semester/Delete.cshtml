@@ -1,0 +1,28 @@
+﻿@model SemesterUpdateVm
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 text-danger">Delete Semester</h1>
+        <hr class="my-4">
+
+        <p class="lead">
+            <strong>Are you sure you want to delete the semester:</strong>
+            <span class="text-primary">@Model.Name</span>
+            <br />
+            <span>(@Model.StartDate.ToString("MMMM dd, yyyy")) - (@Model.EndDate.ToString("MMMM dd, yyyy"))</span>
+        </p>
+
+        <p class="text-danger">This action cannot be undone!</p>
+
+        <div class="mt-4">
+            <a asp-controller="Semester" asp-action="DeleteSemester" asp-route-Id="@Model.Id" class="btn btn-danger btn-lg mx-2" style="width: 150px;">Yes</a>
+            <a asp-controller="Semester" asp-action="Index" class="btn btn-secondary btn-lg mx-2" style="width: 150px;">No</a>
+        </div>
+    </div>
+</div>
+
+

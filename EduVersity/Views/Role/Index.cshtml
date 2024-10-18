@@ -1,0 +1,41 @@
+﻿@model List<IdentityRole>
+@{
+    ViewData["Title"] = "Index";
+    int i = 1;
+}
+
+<h1>System Roles</h1>
+
+<hr /> <br />
+
+<table class="table table-border table-hover ">
+    <tr>
+        <th>Number</th>
+        <th>Role Name</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+
+    @foreach (var Item in Model)
+    {
+        <tr>
+            <td>@i</td>
+            <td>@Item.Name</td>
+
+            <td>
+                <a href="/Role/Edit/@Item.Id">Edit</a>
+            </td>
+
+            <td>
+                <a href="/Role/Delete/@Item.Id">Remove</a>
+            </td>
+        </tr>
+        i++;
+    }
+
+</table>
+
+<br />
+<a asp-controller="Role" asp-action="AddRole" class="btn btn-primary" style="width:15%">Add New Role</a>
+
+

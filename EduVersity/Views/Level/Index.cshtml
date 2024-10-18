@@ -1,0 +1,40 @@
+﻿@model List<LevelReadVm>;
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Levels</h1>
+
+<hr />
+<br />
+
+<table class="table table-border table-hover ">
+    <tr>
+        <th>Level Name</th>
+        <th>Edit</th>
+        <th>Remove</th>
+    </tr>
+
+    @foreach (var Item in Model)
+    {
+        <tr>
+            <td>@Item.Name</td>
+
+            <td>
+                <a href="/Level/Edit/@Item.Id">Edit</a>
+            </td>
+
+            <td>
+                <a href="/Level/Delete/@Item.Id">Remove</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+<br />
+<a asp-controller="Level" asp-action="AddLevel" class="btn btn-primary" style="width:20%">Add New Level</a>
+
+

@@ -1,0 +1,18 @@
+﻿
+@model StudentDetailsVm
+
+<div class="container mt-5">
+
+
+    <a class="btn btn-primary" href="/Enrollments/StudentEnrollmentsDetails/@Model.Id">My Courses</a>
+
+    <a class="btn btn-primary" href="/Enrollments/GetSemesterCourses?SemesterId=@Model.SemesterId
+    &DepartmentId=@Model.DepartmentId&LevelId=@Model.LevelId&Username=@Model.Username">
+    Semester Courses</a>
+
+</div>
+
+
+
+
+

@@ -1,0 +1,80 @@
+﻿
+@model List<IGrouping<string,CourseLevelSemesterVm>>
+
+
+@if (ViewBag.level != null)
+{
+<br />
+
+<h2>Level: @ViewBag.level.Name</h2>
+<hr />
+<br />
+
+
+
+    <form asp-controller="Semester" asp-action="Next" class="form-control">
+
+        @for(int i = 0;i<Model.Count;i++)
+        {
+            var group = Model[i];
+            var groupItems = group.ToList();
+
+            <br />
+            <h5>Department: @group.Key</h5>
+
+            <br />
+
+            <div class="row">
+                @for (int j = 0; j < groupItems.Count; j++)
+                {
+                    <div class="col-sm-3">
+                        <div class="card border-dark mb-3" style="max-width: 16rem;">
+
+                            <div class="card-header">Name: @groupItems[j].CourseName</div>
+
+                            <div class="card-body text-dark">
+
+                                <div class="form-group form-check">
+
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="Model[@(i * groupItems.Count + j)].IsSelected" value="true" />
+                                        <p>Add To This Semester</p>
+                                    </label>
+
+                                </div>
+
+                                <input type="hidden" name="Model[@(i * groupItems.Count + j)].LevelId" value="@ViewBag.level.Id" />
+                                <input type="hidden" name="Model[@(i * groupItems.Count + j)].SemesterId" value="@ViewBag.SemesterId" />
+                                <input type="hidden" name="Model[@(i * groupItems.Count + j)].CourseId" value="@groupItems[j].CourseId" />
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                }
+            </div>
+
+        }
+
+        <div class="form-group">
+            <input type="submit" value="Next" class="btn btn-primary" style="max-width: 18rem;" />
+        </div>
+
+    </form>
+}
+
+else
+{
+    
+    <div class="alert alert-success text-center" role="alert" style="padding: 20px; margin-top: 20px;">
+        <h4 class="alert-heading">Success!</h4>
+        <p>The process has been completed successfully.</p>
+        <hr />
+        <a href="/Semester/Index" class="btn btn-lg btn-success mt-3">Finish</a>
+    </div>
+}   
+
+
+
+    

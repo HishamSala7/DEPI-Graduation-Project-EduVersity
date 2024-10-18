@@ -1,0 +1,27 @@
+﻿@model EduVersity.ViewModels.Post.PostAddVm
+
+<h2 class="text-center mb-4">Create New Announcement</h2>
+
+<div class="d-flex justify-content-center">
+    <form asp-action="Create" asp-route-Username="@ViewBag.Username" method="post" class="shadow-sm p-4 bg-light rounded" style="width: 50%;">
+
+        <div class="form-group mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control form-control-sm" style="width: 100%;" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Content" class="form-label"></label>
+            <textarea asp-for="Content" class="form-control form-control-sm" rows="4" style="width: 100%;"></textarea>
+            <span asp-validation-for="Content" class="text-danger"></span>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-sm px-4">Create</button>
+            <a class="btn btn-primary btn-sm px-4" href="/Post/Index">Back</a>
+        </div>
+
+    </form>
+</div>
+

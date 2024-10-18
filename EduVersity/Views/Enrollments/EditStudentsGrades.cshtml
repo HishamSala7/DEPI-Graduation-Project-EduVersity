@@ -1,0 +1,56 @@
+﻿
+ @model List<StudentGradeEditVm>
+
+@{
+    ViewData["Title"] = "Edit Students Grades";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center text-primary mb-4">Students Grades in @ViewBag.CourseName</h1>
+    <hr />
+
+    <form asp-action="SaveStudentsGrades" asp-route-CourseId="@ViewBag.CourseId" method="post" class="shadow-sm p-4 bg-light rounded">
+        <!-- Table Container -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover align-middle text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Student Name</th>
+                        <th scope="col">Current Grade</th>
+                        <th scope="col">Edit Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int j = 0; j < Model.Count; j++)
+                    {
+                        <tr>
+                            <td>@(j + 1)</td>
+                            <td>@(Model[j].FirstName + " " + Model[j].LastName)</td>
+                            <td>@Model[j].Grade</td>
+                            <td>
+                                <input type="text" name="Model[@j].Grade" value="@Model[j].Grade" class="form-control" style="width: 100px; margin: 0 auto;" />
+                                <input type="hidden" name="Model[@j].StudentId" value="@Model[j].StudentId" />
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-lg btn-primary px-5 py-2 mx-2 shadow-sm" style="border-radius: 30px;">
+                Save
+            </button>
+
+            <a href="/Enrollments/Index" class="btn btn-lg btn-outline-secondary px-5 py-2 mx-2 shadow-sm" style="border-radius: 30px;">
+                Back
+            </a>
+        </div>
+
+    </form>
+</div>
+
+
+
+

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\controllers\\materialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\views\\material\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\views\\material\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\views\\material\\addmaterial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\views\\material\\addmaterial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\managers\\materialmanager\\materialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\managers\\materialmanager\\materialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\viewmodels\\material\\materialaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\viewmodels\\material\\materialaddvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|d:\\.net track\\depi\\gp\\eduversity - old version\\eduversity\\views\\enrollments\\studentenrollmentsdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E09AAE9-47B4-49C5-933D-B2A48C7B3DDD}|EduVersity\\EduVersity.csproj|solutionrelative:eduversity\\views\\enrollments\\studentenrollmentsdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaterialAddVm.cs",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\ViewModels\\Material\\MaterialAddVm.cs",
+              "RelativeDocumentMoniker": "EduVersity\\ViewModels\\Material\\MaterialAddVm.cs",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\ViewModels\\Material\\MaterialAddVm.cs",
+              "RelativeToolTip": "EduVersity\\ViewModels\\Material\\MaterialAddVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T02:23:38.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddMaterial.cshtml",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Material\\AddMaterial.cshtml",
+              "RelativeDocumentMoniker": "EduVersity\\Views\\Material\\AddMaterial.cshtml",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Material\\AddMaterial.cshtml",
+              "RelativeToolTip": "EduVersity\\Views\\Material\\AddMaterial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T02:12:09.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentEnrollmentsDetails.cshtml",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Enrollments\\StudentEnrollmentsDetails.cshtml",
+              "RelativeDocumentMoniker": "EduVersity\\Views\\Enrollments\\StudentEnrollmentsDetails.cshtml",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Enrollments\\StudentEnrollmentsDetails.cshtml",
+              "RelativeToolTip": "EduVersity\\Views\\Enrollments\\StudentEnrollmentsDetails.cshtml",
+              "ViewState": "AQIAAAsAAACAMzMzMzMbwBcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T01:42:54.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Material\\Index.cshtml",
+              "RelativeDocumentMoniker": "EduVersity\\Views\\Material\\Index.cshtml",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Views\\Material\\Index.cshtml",
+              "RelativeToolTip": "EduVersity\\Views\\Material\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T01:35:20.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MaterialManager.cs",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Managers\\MaterialManager\\MaterialManager.cs",
+              "RelativeDocumentMoniker": "EduVersity\\Managers\\MaterialManager\\MaterialManager.cs",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Managers\\MaterialManager\\MaterialManager.cs",
+              "RelativeToolTip": "EduVersity\\Managers\\MaterialManager\\MaterialManager.cs",
+              "ViewState": "AQIAABAAAADAmpmZmZkdwCIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T01:27:59.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MaterialController.cs",
+              "DocumentMoniker": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Controllers\\MaterialController.cs",
+              "RelativeDocumentMoniker": "EduVersity\\Controllers\\MaterialController.cs",
+              "ToolTip": "D:\\.Net Track\\DEPI\\GP\\EduVersity - old version\\EduVersity\\Controllers\\MaterialController.cs",
+              "RelativeToolTip": "EduVersity\\Controllers\\MaterialController.cs",
+              "ViewState": "AQIAACoAAAAAmpmZmZkZwDYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T01:23:51.675Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

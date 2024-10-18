@@ -1,0 +1,59 @@
+﻿@model List<SemesterReadVm>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Semesters</h1>
+
+<hr />
+<br />
+
+<table class="table table-border table-hover ">
+    <tr>
+        <th>Semester Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Set Courses</th>
+        <th>Details</th>
+        <th>Edit</th> 
+        <th>Remove</th>
+
+    </tr>
+
+    @foreach (var Item in Model)
+    {
+
+        <tr >
+
+
+                <td>@Item.Name</td>
+                <td>@Item.StartDate</td>
+                <td>@Item.EndDate</td>
+
+                <td>
+                    <a href="/Semester/Next/@Item.Id">Set</a>
+                </td> 
+                
+                <td>
+                    <a href="/Semester/Details/@Item.Id">Show Details</a>
+                </td> 
+
+                <td>
+                    <a href="/Semester/Edit/@Item.Id">Edit</a>
+                </td>
+     
+                 <td>
+                    <a href="/Semester/Delete/@Item.Id">Remove</a>
+                </td>
+        
+            
+    </tr>
+
+    }
+
+</table>
+
+<br />
+<a asp-controller="Semester" asp-action="Add" class="btn btn-primary" style="width:15%">Add New Semester</a>
+

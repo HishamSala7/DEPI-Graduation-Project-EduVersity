@@ -1,0 +1,127 @@
+﻿
+@model List<EduVersity.ViewModels.Material.MaterialReadVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a href="/Material/AddMaterial?CourseId=@ViewBag.CourseId
+&CourseName=@ViewBag.CourseName" class="btn btn-primary">Add</a>
+
+
+@* 
+<div class="container mt-4">
+
+    <h1 class="mb-4 text-center display-4">Manage Materials: @ViewBag.CourseName</h1>
+    <hr />
+
+    @foreach (var material in Model)
+    {
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-primary font-weight-bold">
+                    Title: @material.Title
+                </h5>
+
+                <dl class="row mt-3">
+                   
+                    <dt class="col-sm-3 font-weight-bold text-muted">Upload Date:</dt>
+                    <dd class="col-sm-9 text-dark font-italic">
+                        @material.UploadDate
+                    </dd>
+
+                    <dt class="col-sm-3 font-weight-bold text-muted">File Link:</dt>
+                    <dd class="col-sm-9 text-dark font-italic">
+                        @material.FileLink
+                    </dd>
+
+                    <dt class="col-sm-3 font-weight-bold text-muted">Download:</dt>
+                    <dd class="col-sm-9 text-dark font-italic">
+                        
+                    </dd>
+
+                    <dt class="col-sm-3 font-weight-bold text-muted">Edit:</dt>
+                    <dd class="col-sm-9 text-dark font-italic">
+                        
+                    </dd>
+
+                    <dt class="col-sm-3 font-weight-bold text-muted">Delete:</dt>
+                    <dd class="col-sm-9 text-dark font-italic">
+                        
+                    </dd>
+
+                </dl>
+
+            </div>
+               
+        
+        </div>
+    }
+
+</div>
+
+
+
+
+ *@
+
+
+
+
+
+
+
+
+@* <h3>Manage Materials: @ViewBag.CourseName</h3>
+<hr /> *@
+
+@* <a href="/Material/AddMaterial" class="btn btn-primary">Add Material</a> *@
+ 
+@*   <table class="table table-bordered table-hover">
+    
+        <tr>
+            <th>Title</th>
+            <th>Upload Date</th>
+            <th>File Link</th>
+            <th>action</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+
+    @foreach (var material in Model)
+        {
+            <tr>
+                <td>@material.Title</td>
+                <td>@material.UploadDate</td>
+                <td>@material.FileLink</td>
+                <td>
+                    <a asp-action="DownloadFile" asp-route-id="@material.Id">Download</a>
+                </td>
+
+                 <td>
+                <a href="/Material/EditMaterial/@material.Id" class="btn btn-primary"> Edit </a>
+                 </td> 
+                 
+                 <td>
+                <a href="/Material/Delete/@material.Id" class="btn btn-primary"> delete </a>
+                 </td> *@
+
+           @*  <td>
+                <a href="/Material/Edit/@Item.CourseId">Edit</a>
+            </td>
+
+            <td>
+                <a href="/Material/AddMaterial/@Item.CourseId">Add Material</a>
+            </td>
+
+            <td>
+                <a href="/Course/Delete/@Item.CourseId">Remove</a>
+            </td> *@
+
+
+@*             </tr>
+        }
+</table> *@
+@*                  <td><a href="@material.FileContent">Download</a></td>
+ *@@*               <a asp-action="DownloadFile" asp-route-id="@material.Id">Download</a>
+ *@

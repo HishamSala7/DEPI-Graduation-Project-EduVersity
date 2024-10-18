@@ -1,0 +1,49 @@
+﻿
+ @model List<ProfessorCourseReadVm>
+
+@{
+    ViewData["Title"] = "Courses and Teachers";
+    int i = 1;
+}
+
+<!-- Page Title -->
+<div class="text-center mt-4 mb-4">
+    <h1 class="display-5 text-primary font-weight-bold">Courses and Assigned Teachers</h1>
+    <p class="text-muted">Below is a list of courses and the professors teaching them.</p>
+</div>
+
+<!-- Courses and Teachers Table -->
+<div class="container">
+    <div class="table-responsive shadow-lg rounded">
+        <table class="table table-striped table-hover align-middle text-center">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th scope="col" class="py-3">#</th>
+                    <th scope="col" class="py-3">Course Name</th>
+                    <th scope="col" class="py-3">Taught By</th>
+                </tr>
+            </thead>
+            <tbody class="bg-light">
+                @foreach (var item in Model)
+                {
+                    var fullname = item.FirstName + " " + item.LastName;
+                    <tr>
+                        <td class="py-2 font-weight-bold">@i</td>
+                        <td class="py-2">@item.CourseName</td>
+                        <td class="py-2">@fullname</td>
+                    </tr>
+                    i++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Back Button -->
+<div class="text-center mt-4">
+    <a class="btn btn-lg btn-outline-primary px-5" href="/Course/Index">Back to Courses</a>
+</div>
+
+
+
+

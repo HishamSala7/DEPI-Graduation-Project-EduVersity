@@ -1,0 +1,46 @@
+﻿
+ @model List<ProfessorCourseReadVm>
+
+@{
+    ViewData["Title"] = "Assigned Courses";
+}
+
+<div class="container mt-5">
+    <!-- Title -->
+    <h1 class="text-center text-primary mb-4">Courses Assigned to You</h1>
+    <hr />
+
+    <!-- Table Container -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Assigned Course</th>
+                    <th scope="col">Available Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CourseName</td>
+                        
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-outline-primary" href="/Material/Index?CourseId=@item.CourseId&CourseName=@item.CourseName">Upload Course Materials</a>
+                                <a class="btn btn-outline-primary" href="/Enrollments/EditStudentsGrades?CourseId=@item.CourseId&CourseName=@item.CourseName">Manage Student Grades</a>
+                            </div>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Back Button -->
+    <div class="text-center mt-4">
+        <a class="btn btn-secondary px-4" href="/Enrollments/Index">Back</a>
+    </div>
+</div>
+
